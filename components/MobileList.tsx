@@ -13,10 +13,10 @@ import Link from "next/link";
 
 function MobileList() {
 	const [open, setOpen] = useState(false);
-	console.log(open);
+	// console.log(open);
 	return (
 		<div className="">
-			<div className="z-20">
+			<div className="z-20 hover:cursor-pointer">
 				<List color="#ff0000" className="" onClick={() => setOpen(!open)} />
 			</div>
 			{open ? (

@@ -1,1 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Orbitron&family=Outfit:wght@200&family=Sacramento&display=swap");
+
+.boxSub {
+	box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+		rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+	border-radius: 56% 44% 54% 46% / 31% 81% 19% 69%;
+	background-image: linear-gradient(
+		to right bottom,
+		#1b2739,
+		#005879,
+		#008e91,
+		#00c272,
+		#a8eb12
+	);
+	opacity: 0.9;
+}
+
+.imgSub {
+	border-radius: 73% 27% 67% 33% / 33% 77% 23% 67%;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.btn {
+	background-image: linear-gradient(
+		to right bottom,
+		#dc1b56,
+		#c3006b,
+		#9e007d,
+		#6b0c8b,
+		#092190
+	);
+}
+.btn-1 {
+	background-image: linear-gradient(
+		to left bottom,
+		#9f6b7b,
+		#9e7fad,
+		#729dd8,
+		#00bce2,
+		#1ad4c4
+	);
+}
+.bg-color {
+	background-image: url("https://images.unsplash.com/photo-1587270613304-4cc9ef012b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWFydmVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+}
+
+.error-page {
+	background-image: linear-gradient(
+		to right bottom,
+		#cba3a7,
+		#e0a797,
+		#e4b282,
+		#d4c473,
+		#add879,
+		#9de27d,
+		#87ec85,
+		#67f691,
+		#89f979,
+		#abfb5f,
+		#cdfb43,
+		#f0f921
+	);
+	border-radius: 38% 62% 38% 62% / 43% 39% 61% 57%;
+	/* background-image: url("https://images.unsplash.com/photo-1587270613304-4cc9ef012b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWFydmVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"); */
+}
