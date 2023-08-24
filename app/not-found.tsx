@@ -5,7 +5,7 @@ import React from "react";
 function Custom404() {
 	return (
 		<>
-			<div className="flex h-[calc(100vh-9vh)] w-[70%] m-auto flex-col justify-center items-center gap-2 error-page">
+			<div className="flex h-[calc(100vh-9vh)] my-5 w-[50%] m-auto flex-col justify-center items-center gap-2 error-page">
 				<div className="font-Orbitron text-4xl uppercase text-center">
 					page not found
 				</div>

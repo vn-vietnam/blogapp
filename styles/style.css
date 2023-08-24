@@ -1,5 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Orbitron&family=Outfit:wght@200&family=Sacramento&display=swap");
 
+/* scroll */
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 100px;
+	
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #FCFAF2;
+	border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #dbd6bd;
+	border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #e2d7ac;
+}
+
 .boxSub {
 	box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
 		rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -60,6 +85,24 @@
 		#cdfb43,
 		#f0f921
 	);
-	border-radius: 38% 62% 38% 62% / 43% 39% 61% 57%;
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+	background-color: #fcfaf2;
+	animation: borderAnimation normal infinite 5s;
+	/* bg-[#FCFAF2] */
 	/* background-image: url("https://images.unsplash.com/photo-1587270613304-4cc9ef012b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWFydmVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"); */
+}
+
+@keyframes borderAnimation {
+	0% {
+		border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+	}
+	25% {
+		border-radius: 70% 30% 37% 63% / 65% 61% 39% 35%;
+	}
+	50% {
+		border-radius: 87% 13% 79% 21% / 21% 84% 16% 79%;
+	}
+	100% {
+		border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+	}
 }

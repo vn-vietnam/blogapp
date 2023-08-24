@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 function Subscribe() {
 	return (
-		<div className="h-[100vh] lg:h-[50vh] m-auto w-[90%] flex lg:flex-row flex-col gap-10 my-5">
+		<div className="h-[100vh] sm:h-[150vh] lg:h-[55vh] m-auto w-[90%] flex lg:flex-row flex-col gap-10 my-5">
 			<div className="flex flex-1 ml-[10%]  relative boxSub ">
 				<Image
 					src={
