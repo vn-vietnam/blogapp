@@ -35,8 +35,8 @@ function Header() {
 							className="hover:animate-bounce hidden lg:block"
 						/>
 					</Link>
-					<Link href={"/cinema"} className="flex gap-1">
-						<div>Cinema</div>
+					<Link href={"/blog"} className="flex gap-1">
+						<div>Blog</div>
 
 						<Projector
 							color="#10aae7"
