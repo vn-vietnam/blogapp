@@ -37,6 +37,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ----
 
+-login register
+
+edit writing
+
+-not using: delete user
+-add user
+-writing add category and type
+
+
+
+
 database
 
 create blog
@@ -45,7 +56,6 @@ add movies from api
 
 dashboard
 
-login register
 
 SEO
 

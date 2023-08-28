@@ -37,3 +37,19 @@ export const GET = async (req: NextRequest) => {
 	}
 };
 
+export const POST = async (req: NextRequest) => {
+	const body = await req.json();
+	console.log(body);
+	try {
+		const product = await prisma.post.create({
+			data: body,
+		});
+		return new NextResponse(JSON.stringify(product), { status: 201 });
+	} catch (err) {
+		console.log(err);
+		return new NextResponse(
+			JSON.stringify({ message: "Something went wrong!" }),
+			{ status: 500 }
+		);
+	}
+};

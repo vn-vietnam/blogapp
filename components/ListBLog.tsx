@@ -11,7 +11,7 @@ const getData = async () => {
 	});
 
 	if (!res.ok) {
-		throw new Error("Failed!");
+		console.log("error");
 	}
 
 	return res.json();
@@ -27,31 +27,34 @@ const ListBLog = async () => {
 					{posts?.map((e) => (
 						<>
 							<div
-								key={e.id}
+								key={e?.id}
 								className="w-[100%] border-[1px] gap-5 flex flex-col md:flex-row flex-1 rounded-lg relative shadow-2xl shadow-slate-500"
 							>
 								<Image
-									src={e.image1}
-									alt=""
+									src={e?.image1 || ""}
+									alt="img"
 									// fill
-									className="rounded-lg z-10 w-[100%] md:w-[20%]"
+									className="rounded-lg z-10 w-[100%] md:w-[15%]"
 									height={100}
 									// objectFit="cover"
 									width={400}
 								/>
 								<div className="flex justify-around items-start flex-col font-Outfit z-10 p-3">
-									<div className="uppercase font-bold ">{e.name}</div>
-									<div>Description: {e.shortContent}</div>
-									<div>Type: {e.Category.nameCate}</div>
-									<div>Time to read: {e.timeRead} mins</div>
-									<div>Author: {e.User.name}</div>
+									<div className="uppercase font-bold ">
+										{e?.name || "Not Set"}
+									</div>
+									<div>Description: {e?.shortContent || "Not Set"}</div>
+									<div>Type: {e?.Category?.nameCate || "Not Set"}</div>
+									<div>Time to read: {e?.timeRead || "Not Set"} mins</div>
+									<div>Author: {e?.User?.name || "Not Set"}</div>
 									<button className="border-[1px] border-black p-2 rounded-xl">
-										<Link href={`/blog/${e.id}`}>Read now</Link>
+										<Link href={`/blog/${e?.id}`}>Read now</Link>
 									</button>
 								</div>
+
 								<Image
-									src={e.image2}
-									alt=""
+									src={e?.image2 || ""}
+									alt="img"
 									fill
 									className="rounded-lg z-0 opacity-40 object-cover"
 								/>

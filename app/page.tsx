@@ -1,4 +1,3 @@
-"use client";
 import BgImg from "@/components/BgImg";
 import Category from "@/components/Category";
 import ListBLog from "@/components/ListBLog";

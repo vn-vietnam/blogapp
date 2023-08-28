@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "../styles/style.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
 	icons: "/cf.svg",
@@ -17,12 +18,17 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
-			<body className="bg-[#FCFAF2]">
-				<Header />
-				{children}
-				<Footer />
-			</body>
-		</html>
+		<ClerkProvider>
+			<html lang="en">
+				<body
+					className="bg-[#FCFAF2]"
+					// suppressHydrationWarning={true}
+				>
+					<Header />
+					{children}
+					<Footer />
+				</body>
+			</html>
+		</ClerkProvider>
 	);
 }

@@ -7,7 +7,7 @@ export const GET = async (req: NextRequest) => {
 	// const cat = searchParams.get("blog");
 
 	try {
-		const products = await prisma.user.findMany({
+		const products = await prisma.type.findMany({
 			// where: {
 			// 	...(cat ? { postSlug: cat } : { feature: true }),
 			// },
@@ -21,19 +21,4 @@ export const GET = async (req: NextRequest) => {
 		);
 	}
 };
-export const POST = async (req: NextRequest) => {
-	const body = await req.json();
-	console.log(body);
-	try {
-		const product = await prisma.user.create({
-			data: body,
-		});
-		return new NextResponse(JSON.stringify(product), { status: 201 });
-	} catch (err) {
-		console.log(err);
-		return new NextResponse(
-			JSON.stringify({ message: err }),
-			{ status: 500 }
-		);
-	}
-};
+

@@ -19,3 +19,17 @@ export type PostType = {
 	User: { name: String };
 	Category: { nameCate: String };
 };
+
+export type CategoryType = {
+	id: String;
+	nameCate: String;
+	posts: {
+		name: String;
+		id: String;
+		content: String;
+		shortContent: String;
+		timeRead: String;
+		image1: String;
+		image2: String;
+	};
+};
