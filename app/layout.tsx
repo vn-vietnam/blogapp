@@ -20,14 +20,16 @@ export default function RootLayout({
 	return (
 		<ClerkProvider>
 			<html lang="en">
-				<body
-					className="bg-[#FCFAF2]"
-					// suppressHydrationWarning={true}
-				>
-					<Header />
-					{children}
-					<Footer />
-				</body>
+			
+					<body
+						className="bg-[#FCFAF2]"
+						// suppressHydrationWarning={true}
+					>
+						<Header />
+						{children}
+						<Footer />
+					</body>
+			
 			</html>
 		</ClerkProvider>
 	);

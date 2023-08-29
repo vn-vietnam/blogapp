@@ -42,7 +42,7 @@ function Header() {
 				</Link>
 				<div className="sm:flex flex-row gap-3 hidden">
 					<BtnSearch />
-					<Link href={"/movies"} className="flex gap-1 ">
+					<Link href={"https://enchanting-creponne-1c1ea8.netlify.app/"} className="flex gap-1 ">
 						<div>Movies</div>
 						<Popcorn
 							color="#34a359"
