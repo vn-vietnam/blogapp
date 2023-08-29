@@ -29,7 +29,7 @@ const categories = [
 	},
 	{
 		id: "64e831f04cdf2ea193abdc86",
-		name: "Thirrler",
+		name: "Thriller",
 	},
 ];
 
@@ -41,18 +41,6 @@ type Inputs = {
 };
 
 export const Get = async () => {
-	const getData = async () => {
-		const res = await fetch(`http://localhost:3000/api/category`, {
-			cache: "no-store",
-		});
-
-		if (!res.ok) {
-			console.log("error");
-			// throw new Error("Failed!");
-		}
-
-		return res.json();
-	};
 	const categories = await getData();
 	// console.log(categories);
 
@@ -136,6 +124,7 @@ function Writing() {
 		// } catch (err) {
 		// 	console.log(err);
 		// }
+
 	};
 
 	// console.log(data);

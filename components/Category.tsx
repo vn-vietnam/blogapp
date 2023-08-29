@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 function Category() {
 	return (
@@ -17,11 +18,13 @@ function Category() {
 					/>
 					<div className="absolute bottom-[10%] left-[10%] flex flex-col gap-2">
 						<div className="text-2xl font-Orbitron font-bold text-white">
-							Horror
+							Romantic
 						</div>
-						<button className="text-center hover:opacity-80 uppercase h-[6vh] rounded-full w-[100%] px-4 border-[1px] font-Alegreya  text-black font-bold border-black outline-none">
-							Watch now
-						</button>
+						<Link href={"/category/64e831d34cdf2ea193abdc81"}>
+							<button className="text-center hover:opacity-80 uppercase h-[6vh] rounded-full w-[100%] px-4 border-[1px] font-Alegreya  text-black font-bold border-black outline-none">
+								Watch now
+							</button>
+						</Link>
 					</div>
 				</div>
 				<div className="flex flex-1 h-full rounded-3xl border-[1px] border-black relative shadow-xl">
@@ -37,9 +40,11 @@ function Category() {
 						<div className="text-2xl font-Orbitron font-bold text-white">
 							Action film
 						</div>
-						<button className="text-center hover:opacity-80 uppercase h-[6vh] rounded-full w-[100%] px-4 border-[1px] font-Alegreya  text-black font-bold border-black outline-none">
-							Watch now
-						</button>
+						<Link href={"/category/64e831cd4cdf2ea193abdc7d"}>
+							<button className="text-center hover:opacity-80 uppercase h-[6vh] rounded-full w-[100%] px-4 border-[1px] font-Alegreya  text-black font-bold border-black outline-none">
+								Watch now
+							</button>
+						</Link>
 					</div>
 				</div>
 				<div className="flex flex-1 h-full rounded-3xl border-[1px] border-black relative shadow-xl">
@@ -55,9 +60,11 @@ function Category() {
 						<div className="text-2xl font-Orbitron font-bold text-white">
 							Thriller
 						</div>
-						<button className="text-center hover:opacity-80 uppercase h-[6vh] rounded-full w-[100%] px-4 border-[1px] font-Alegreya text-black font-bold border-black outline-none">
-							Watch now
-						</button>
+						<Link href={"/category/64e831f04cdf2ea193abdc86"}>
+							<button className="text-center hover:opacity-80 uppercase h-[6vh] rounded-full w-[100%] px-4 border-[1px] font-Alegreya text-black font-bold border-black outline-none">
+								Watch now
+							</button>
+						</Link>
 					</div>
 				</div>
 			</div>
@@ -74,9 +81,11 @@ function Category() {
 					<div className="text-2xl font-Orbitron font-bold text-white">
 						See More
 					</div>
-					<button className="text-center hover:opacity-80 uppercase h-[6vh] rounded-full w-[100%] px-4 border-[1px] font-Alegreya text-black font-bold  border-black outline-none">
-						Watch now
-					</button>
+					<Link href={"/category"}>
+						<button className="text-center hover:opacity-80 uppercase h-[6vh] rounded-full w-[100%] px-4 border-[1px] font-Alegreya text-black font-bold  border-black outline-none">
+							Watch now
+						</button>
+					</Link>
 				</div>
 			</div>
 		</div>

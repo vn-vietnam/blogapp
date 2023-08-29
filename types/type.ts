@@ -21,9 +21,11 @@ export type PostType = {
 };
 
 export type CategoryType = {
+	map(arg0: (e: any) => import("react").JSX.Element): import("react").ReactNode;
 	id: String;
 	nameCate: String;
 	posts: {
+		map(arg0: (e: any) => import("react").JSX.Element): import("react").ReactNode;
 		name: String;
 		id: String;
 		content: String;
@@ -33,3 +35,4 @@ export type CategoryType = {
 		image2: String;
 	};
 };
+

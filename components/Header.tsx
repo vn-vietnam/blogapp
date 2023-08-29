@@ -26,7 +26,6 @@ import axios from "axios";
 
 function Header() {
 	const { isLoaded, user } = useUser();
-	
 
 	return (
 		<div className="bg-[#FCFAF2]">
@@ -50,8 +49,8 @@ function Header() {
 							className="hover:animate-bounce hidden lg:block"
 						/>
 					</Link>
-					<Link href={"/news"} className="flex gap-1">
-						<div>News</div>
+					<Link href={"/category"} className="flex gap-1">
+						<div>Category</div>
 						<Newspaper
 							color="#d4d4d4"
 							className="hover:animate-bounce hidden lg:block"
@@ -67,8 +66,8 @@ function Header() {
 					</Link>
 					{user ? (
 						<>
-							<Link href={"/writing"} className="flex gap-1">
-								<div>Writing</div>
+							<Link href={"/ticket"} className="flex gap-1">
+								<div>Ticket</div>
 
 								{/* <Flame
 							color="#ff0000"
