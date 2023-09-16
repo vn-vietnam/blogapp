@@ -40,12 +40,12 @@ type Inputs = {
 	timeRead: Number;
 };
 
-export const Get = async () => {
-	const categories = await getData();
-	// console.log(categories);
+// export const Get = async () => {
+// 	const categories = await getData();
+// 	// console.log(categories);
 
-	return categories;
-};
+// 	return categories;
+// };
 
 function Writing() {
 	const [file1, setFile1] = useState<File>();
@@ -98,7 +98,7 @@ function Writing() {
 			const res = await response.json();
 			console.log(res.url);
 			axios
-				.post("http://localhost:3000/api/posts", {
+				.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts`, {
 					...inputs,
 					image1: res.url,
 					image2: res.url,
@@ -124,7 +124,6 @@ function Writing() {
 		// } catch (err) {
 		// 	console.log(err);
 		// }
-
 	};
 
 	// console.log(data);

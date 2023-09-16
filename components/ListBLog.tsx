@@ -6,7 +6,7 @@ import React from "react";
 const prisma = new PrismaClient();
 
 const getData = async () => {
-	const res = await fetch("http://localhost:3000/api/posts", {
+	const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts`, {
 		cache: "no-store",
 	});
 

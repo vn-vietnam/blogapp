@@ -16,7 +16,7 @@ import Link from "next/link";
 import { auth, clerkClient } from "@clerk/nextjs";
 
 const getData = async (id: string) => {
-	const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+	const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/posts/${id}`, {
 		cache: "no-store",
 	});
 

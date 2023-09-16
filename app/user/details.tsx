@@ -13,7 +13,7 @@ export async function DetailUser(id: any) {
 		e.preventDefault();
 		// console.log("hello");
 		axios
-			.post("http://localhost:3000/api/users", {
+			.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/users`, {
 				id: id?.id,
 				image: user?.imageUrl,
 				name: user?.fullName,
@@ -35,7 +35,10 @@ export async function DetailUser(id: any) {
 	return (
 		<>
 			{isLoaded ? (
-				<form onSubmit={handleSubmit} className="flex flex-col gap-5 font-Outfit  m-auto ">
+				<form
+					onSubmit={handleSubmit}
+					className="flex flex-col gap-5 font-Outfit  m-auto "
+				>
 					<Image
 						src={user?.imageUrl}
 						width={30}

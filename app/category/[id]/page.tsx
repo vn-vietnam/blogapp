@@ -7,7 +7,7 @@ import Link from "next/link";
 const getData = async (id: string) => {
 	// const param = useParams("");
 	// console.log(param.id);
-	const res = await fetch(`http://localhost:3000/api/category/${id}`, {
+	const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/category/${id}`, {
 		cache: "no-store",
 	});
 
