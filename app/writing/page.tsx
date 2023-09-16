@@ -143,7 +143,7 @@ function Writing() {
 						<div className="relative mb-6 ">
 							<div className="mt-1 text-sm  text-gray-600 relative sm:mt-0 sm:col-span-2">
 								<Image
-									src={user?.imageUrl}
+									src={user?.imageUrl as string}
 									width={30}
 									height={30}
 									alt="image"
