@@ -40,7 +40,7 @@ export async function DetailUser(id: any) {
 					className="flex flex-col gap-5 font-Outfit  m-auto "
 				>
 					<Image
-						src={user?.imageUrl}
+						src={user?.imageUrl as string}
 						width={30}
 						height={30}
 						alt="image"
